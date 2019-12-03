@@ -1,0 +1,35 @@
+# 重要知识点
+
+- 原始类型与对象类型及对象之间的转换
+- 构造函数、实例、原型、原型链、继承等
+- 实现继承的方式及优缺点
+- typeof & instanceof
+- 原生ajax
+- 对象深浅拷贝
+- this的理解
+- 函数柯里化、高阶函数
+- bind、call、apply用法及区别
+- 字符串、数组、对象、日期等的属性与方法
+- 浏览器对象
+    - Window对象
+    - History对象
+    - Location对象
+    - Screen对象
+- 三大家族和一个事件对象
+    - Offset家族
+    - Scroll家族
+    - Client家族
+    - Event事件
+- Event-Loop 事件循环
+    - js 运行机制
+    - 进程与线程
+    - 宏任务与微任务
+    - Node中的Event-Loop
+- 原生DOM增删改查
+- 常见的模块化
+- 作用域、闭包与立即执行函数等
+- 同步与异步
+- 常见的循环及区别
+    - for...in
+    - for...of
+    - ....

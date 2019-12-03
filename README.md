@@ -1,2 +1,2 @@
-# tangmengcheng.github.io
-GitHub Page
+# technology
+技术博客
