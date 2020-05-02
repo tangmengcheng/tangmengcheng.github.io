@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>promise | 技术博客文章总结123</title>
+    <meta name="description" content="Welcome to come to my blog">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.3e1d0bd1.css" as="style"><link rel="preload" href="/assets/js/app.587ba592.js" as="script"><link rel="preload" href="/assets/js/42.0ffda9f5.js" as="script"><link rel="prefetch" href="/assets/js/10.6aa5eb81.js"><link rel="prefetch" href="/assets/js/11.b5ac4932.js"><link rel="prefetch" href="/assets/js/12.323082e7.js"><link rel="prefetch" href="/assets/js/13.fdf26cd4.js"><link rel="prefetch" href="/assets/js/14.2c3ab65b.js"><link rel="prefetch" href="/assets/js/15.bf4b9836.js"><link rel="prefetch" href="/assets/js/16.5f09ff97.js"><link rel="prefetch" href="/assets/js/17.da87f7ee.js"><link rel="prefetch" href="/assets/js/18.2dccadf1.js"><link rel="prefetch" href="/assets/js/19.59a0ddbd.js"><link rel="prefetch" href="/assets/js/2.9c3ab47d.js"><link rel="prefetch" href="/assets/js/20.c406a07e.js"><link rel="prefetch" href="/assets/js/21.0546a274.js"><link rel="prefetch" href="/assets/js/22.ff4c3d15.js"><link rel="prefetch" href="/assets/js/23.9883b3d7.js"><link rel="prefetch" href="/assets/js/24.2419fdef.js"><link rel="prefetch" href="/assets/js/25.581ac1a6.js"><link rel="prefetch" href="/assets/js/26.aa7cf47d.js"><link rel="prefetch" href="/assets/js/27.88a88049.js"><link rel="prefetch" href="/assets/js/28.c61adc43.js"><link rel="prefetch" href="/assets/js/29.f2732946.js"><link rel="prefetch" href="/assets/js/3.8c9b7a45.js"><link rel="prefetch" href="/assets/js/30.33d4b68e.js"><link rel="prefetch" href="/assets/js/31.76baa079.js"><link rel="prefetch" href="/assets/js/32.ea5975b0.js"><link rel="prefetch" href="/assets/js/33.a15b2eda.js"><link rel="prefetch" href="/assets/js/34.1da553cf.js"><link rel="prefetch" href="/assets/js/35.a86fe51b.js"><link rel="prefetch" href="/assets/js/36.cf8adc2d.js"><link rel="prefetch" href="/assets/js/37.cfc956d4.js"><link rel="prefetch" href="/assets/js/38.148d8e56.js"><link rel="prefetch" href="/assets/js/39.cc8a4e66.js"><link rel="prefetch" href="/assets/js/4.77a41cc2.js"><link rel="prefetch" href="/assets/js/40.39d5552c.js"><link rel="prefetch" href="/assets/js/41.be2bcfd9.js"><link rel="prefetch" href="/assets/js/43.b9e5c95c.js"><link rel="prefetch" href="/assets/js/44.0aa52ce9.js"><link rel="prefetch" href="/assets/js/45.2380a602.js"><link rel="prefetch" href="/assets/js/46.19fb405e.js"><link rel="prefetch" href="/assets/js/47.6c04b943.js"><link rel="prefetch" href="/assets/js/48.4c125c4a.js"><link rel="prefetch" href="/assets/js/49.f8920e41.js"><link rel="prefetch" href="/assets/js/5.75113381.js"><link rel="prefetch" href="/assets/js/50.8a664693.js"><link rel="prefetch" href="/assets/js/51.6920fd1f.js"><link rel="prefetch" href="/assets/js/52.87a4d54a.js"><link rel="prefetch" href="/assets/js/53.97d2fa3e.js"><link rel="prefetch" href="/assets/js/54.3d18840d.js"><link rel="prefetch" href="/assets/js/55.a9b10220.js"><link rel="prefetch" href="/assets/js/56.04543984.js"><link rel="prefetch" href="/assets/js/57.5b77e968.js"><link rel="prefetch" href="/assets/js/58.46cc77d7.js"><link rel="prefetch" href="/assets/js/59.e4ef251b.js"><link rel="prefetch" href="/assets/js/6.ddad5d93.js"><link rel="prefetch" href="/assets/js/60.eceb78dd.js"><link rel="prefetch" href="/assets/js/61.00db87e2.js"><link rel="prefetch" href="/assets/js/62.769c86ef.js"><link rel="prefetch" href="/assets/js/63.97694c9c.js"><link rel="prefetch" href="/assets/js/64.f2a7cefb.js"><link rel="prefetch" href="/assets/js/65.01a28796.js"><link rel="prefetch" href="/assets/js/66.76680dce.js"><link rel="prefetch" href="/assets/js/67.a135aa39.js"><link rel="prefetch" href="/assets/js/68.d3355a59.js"><link rel="prefetch" href="/assets/js/69.343fbe8f.js"><link rel="prefetch" href="/assets/js/7.5a5eca1f.js"><link rel="prefetch" href="/assets/js/70.18a45976.js"><link rel="prefetch" href="/assets/js/71.ece29134.js"><link rel="prefetch" href="/assets/js/8.ecbe09f8.js"><link rel="prefetch" href="/assets/js/9.0ecfebed.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.3e1d0bd1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">技术博客文章总结123</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端三剑客</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/html/" class="nav-link">HTML</a></li><li class="dropdown-item"><!----> <a href="/CSS/" class="nav-link">CSS</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/" class="nav-link">JavaScript</a></li></ul></div></div><div class="nav-item"><a href="/vue/" class="nav-link">Vue.js</a></div> <a href="https://github.com/tangmengcheng/technology.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端三剑客</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/html/" class="nav-link">HTML</a></li><li class="dropdown-item"><!----> <a href="/CSS/" class="nav-link">CSS</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/" class="nav-link">JavaScript</a></li></ul></div></div><div class="nav-item"><a href="/vue/" class="nav-link">Vue.js</a></div> <a href="https://github.com/tangmengcheng/technology.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading"><span>Vue 全家桶</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>React 全家桶</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>JS</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>ES6+</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>H5</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>CSS3</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>jQuery</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>HTTP</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Node</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Java</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>小程序</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>面试总结</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>高级进阶</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>项目</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>源码手写</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/chapter15/" class="sidebar-link">Introduction</a></li><li><a href="/chapter15/mvvm.html" class="sidebar-link">MVVM是什么</a></li><li><a href="/chapter15/vue.html" class="sidebar-link">vue</a></li><li><a href="/chapter15/react.html" class="sidebar-link">react</a></li><li><a href="/chapter15/redux.html" class="sidebar-link">redux</a></li><li><a href="/chapter15/promise.html" class="active sidebar-link">promise</a></li><li><a href="/chapter15/vuex.html" class="sidebar-link">vuex</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>高级面试题汇总</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="promise"><a href="#promise" aria-hidden="true" class="header-anchor">#</a> promise</h1> <div class="language- extra-class"><pre class="language-text"><code>const PENDING = 'PENDING'; // 等待
+const FULFILLED = 'FULFILLED'; // 成功
+const REJECTED = 'REJECTED'; // 失败
+
+// 该方法核心就是判断x
+const resolvePromise = (promise2, x, resolve, reject) =&gt; {
+    // 注意一个问题：promise2未定义；因为JS执行机制，new Promise没有执行完就传promise2 肯定是没有定义
+    // 此时我们需要异步来解决，先让new Promise执行完；然后在调resolvePromise方法将promise2传入，这样就可以获取的到了
+
+    // 判断x和promise2是不是同一个人，是则就报错
+    if(promise2 === x) {
+        return reject(new TypeError('Chaining cycle detected for promise #&lt;Promise&gt;'));
+    }
+    let called; // 内部测试的时候  会成功和失败都调用
+    //判断数据类型 typeof instanceof constructor toString
+    if(x !== null &amp;&amp; (typeof x === 'object' || typeof x === 'function')) {
+        
+        try {
+            let then = x.then; // 取then 有可能这个then属性是通过 defineProperty定义
+            if(typeof then === 'function') { // 当前有then方法，就姑且它是一个promise
+                then.call(x, y =&gt; { // y 可能还是一个promise,递归调用，直到解析为一个普通值为止
+                    if (called) {
+                        return
+                    }
+                    called = true;
+                    resolvePromise(promise2, y, resolve, reject); // 采用成功的结果向下传递
+                }, r =&gt; {
+                    if(called) {
+                        return
+                    }
+                    called = true; // 防止多次调用成功和失败
+                    reject(r); // 采用失败的结果向下传递
+                }); // 为什么不直接用x.then;是为了保证不用再次取then的值；因为取该值有可能取不到
+            } else {
+                // {then: 1}
+                resolve(x); // 说明x 是一个普通对象，直接成功即可
+            }
+        } catch (error) {
+            if(called) {
+                return
+            }
+            called = true;
+            reject(error);
+        }
+    } else {
+        // x 不是对象或函数 肯定是一个普通值
+        resolve(x); // 直接让promise2成功
+    }
+}
+
+class Promise {
+    constructor(executor) {
+        //不能相信用户的输入，一定要进行参数校验
+        if (typeof executor !== 'function') {
+            throw new TypeError(` Promise resolver ${executor} is not a function `);
+        }
+        this.status = PENDING;
+        
+        this.value = undefined; // 成功的值
+        this.reason = undefined; // 失败的原因
+
+        this.onResolvedCallbacks = []; // 成功的回调的数组
+        this.onRejectedCallbacks = []; // 失败的回调的数组
+        // 成功函数
+        let resolve = (value) =&gt; {
+            // 屏蔽调用；防止调resolve后又调reject
+            if(this.status === PENDING) {
+                this.value = value;
+                this.status = FULFILLED;
+                this.onResolvedCallbacks.forEach(fn =&gt; fn()); // 发布
+            }
+        }
+
+        // 失败函数
+        let reject = (reason) =&gt; {
+            if(this.status === PENDING) {
+                this.reason = reason;
+                this.status = REJECTED;
+                this.onRejectedCallbacks.forEach(fn =&gt; fn());
+            }
+        }
+
+        try {
+            executor(resolve, reject); // 默认执行器会默认执行
+        } catch (error) {
+            reject(error); // 若执行时发生了错误。等价于调用了失败态
+        }
+    }
+
+    then(onfulfilled, onrejected) { // then 目前有两个参数
+        // onfulfilled, onrejected是可选参数
+        onfulfilled = typeof onfulfilled === 'function' ? onfulfilled : val =&gt; val;
+        
+        onrejected = typeof onrejected === 'function' ? onrejected : err =&gt; {
+            throw err;
+        }
+
+
+        let promise2 = new Promise((resolve, reject) =&gt; {
+            // 同步情况
+            if(this.status === FULFILLED) {
+                setTimeout(() =&gt; {
+                    try {
+                        let x = onfulfilled(this.value);
+                        // x可能是普通值  也可以是promise
+                        // 判断x的值 ===》 promise2的状态 看是成功还是失败
+                        resolvePromise(promise2, x, resolve, reject);
+                    } catch (error) {
+                        reject(error); // 抛错的话直接调用promise2的reject方法
+                    }
+                }, 0);
+            }
+
+            if(this.status === REJECTED) {
+                setTimeout(() =&gt; {
+                    try {
+                        let x = onrejected(this.reason);
+                        resolvePromise(promise2, x, resolve, reject);
+                    } catch (error) {
+                        reject(error);
+                    }
+                }, 0);
+            }
+
+            // 异步情况
+            if(this.status === PENDING) {
+                // 如果是异步就先订阅好
+                this.onResolvedCallbacks.push(() =&gt; {
+                    // todo...
+                    setTimeout(() =&gt; {
+                       try {
+                           let x = onfulfilled(this.value);
+                           resolvePromise(promise2, x, resolve, reject);
+                       } catch (error) {
+                           reject(error);
+                       }
+                    }, 0);
+                })
+                this.onRejectedCallbacks.push(() =&gt; {
+                    setTimeout(() =&gt; {
+                        try {
+                            let x = onrejected(this.reason);
+                            resolvePromise(promise2, x, resolve, reject);
+                        } catch (error) {
+                            reject(error);
+                        }
+                    }, 0);
+                });
+                // 注意：加了异步setTimeout后；若代码里直接throw new Error抛错的话，上面的异常处理捕捉不到，因为是同步的，我们加了setTimeout后该部分就变成异步的了
+                // 所以我们需要在处理异步的情况时候也要加个异常处理try catch
+            }
+        });
+        
+        return promise2;
+    }
+}
+
+// 延迟对象
+Promise.defer = Promise.deferred = function () {
+    let dfd = {};
+    dfd.promise = new Promise((resolve, reject) =&gt; {
+        dfd.resolve = resolve;
+        dfd.reject = reject;
+    })
+    return dfd;
+}
+
+module.exports = Promise;
+
+// 问题：1、为什么要加定时器？2、为什么在处理异步情况的时候也要加try-catch
+
+</code></pre></div></div> <div class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新时间: </span> <span class="time">4/20/2020, 7:54:13 PM</span></div></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/chapter15/redux.html" class="prev">
+          redux
+        </a></span> <span class="next"><a href="/chapter15/vuex.html">
+          vuex
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/assets/js/app.587ba592.js" defer></script><script src="/assets/js/42.0ffda9f5.js" defer></script>
+  </body>
+</html>

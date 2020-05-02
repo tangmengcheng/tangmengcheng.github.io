@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JS 部分 | 技术博客文章总结123</title>
+    <meta name="description" content="Welcome to come to my blog">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.3e1d0bd1.css" as="style"><link rel="preload" href="/assets/js/app.587ba592.js" as="script"><link rel="preload" href="/assets/js/51.6920fd1f.js" as="script"><link rel="prefetch" href="/assets/js/10.6aa5eb81.js"><link rel="prefetch" href="/assets/js/11.b5ac4932.js"><link rel="prefetch" href="/assets/js/12.323082e7.js"><link rel="prefetch" href="/assets/js/13.fdf26cd4.js"><link rel="prefetch" href="/assets/js/14.2c3ab65b.js"><link rel="prefetch" href="/assets/js/15.bf4b9836.js"><link rel="prefetch" href="/assets/js/16.5f09ff97.js"><link rel="prefetch" href="/assets/js/17.da87f7ee.js"><link rel="prefetch" href="/assets/js/18.2dccadf1.js"><link rel="prefetch" href="/assets/js/19.59a0ddbd.js"><link rel="prefetch" href="/assets/js/2.9c3ab47d.js"><link rel="prefetch" href="/assets/js/20.c406a07e.js"><link rel="prefetch" href="/assets/js/21.0546a274.js"><link rel="prefetch" href="/assets/js/22.ff4c3d15.js"><link rel="prefetch" href="/assets/js/23.9883b3d7.js"><link rel="prefetch" href="/assets/js/24.2419fdef.js"><link rel="prefetch" href="/assets/js/25.581ac1a6.js"><link rel="prefetch" href="/assets/js/26.aa7cf47d.js"><link rel="prefetch" href="/assets/js/27.88a88049.js"><link rel="prefetch" href="/assets/js/28.c61adc43.js"><link rel="prefetch" href="/assets/js/29.f2732946.js"><link rel="prefetch" href="/assets/js/3.8c9b7a45.js"><link rel="prefetch" href="/assets/js/30.33d4b68e.js"><link rel="prefetch" href="/assets/js/31.76baa079.js"><link rel="prefetch" href="/assets/js/32.ea5975b0.js"><link rel="prefetch" href="/assets/js/33.a15b2eda.js"><link rel="prefetch" href="/assets/js/34.1da553cf.js"><link rel="prefetch" href="/assets/js/35.a86fe51b.js"><link rel="prefetch" href="/assets/js/36.cf8adc2d.js"><link rel="prefetch" href="/assets/js/37.cfc956d4.js"><link rel="prefetch" href="/assets/js/38.148d8e56.js"><link rel="prefetch" href="/assets/js/39.cc8a4e66.js"><link rel="prefetch" href="/assets/js/4.77a41cc2.js"><link rel="prefetch" href="/assets/js/40.39d5552c.js"><link rel="prefetch" href="/assets/js/41.be2bcfd9.js"><link rel="prefetch" href="/assets/js/42.0ffda9f5.js"><link rel="prefetch" href="/assets/js/43.b9e5c95c.js"><link rel="prefetch" href="/assets/js/44.0aa52ce9.js"><link rel="prefetch" href="/assets/js/45.2380a602.js"><link rel="prefetch" href="/assets/js/46.19fb405e.js"><link rel="prefetch" href="/assets/js/47.6c04b943.js"><link rel="prefetch" href="/assets/js/48.4c125c4a.js"><link rel="prefetch" href="/assets/js/49.f8920e41.js"><link rel="prefetch" href="/assets/js/5.75113381.js"><link rel="prefetch" href="/assets/js/50.8a664693.js"><link rel="prefetch" href="/assets/js/52.87a4d54a.js"><link rel="prefetch" href="/assets/js/53.97d2fa3e.js"><link rel="prefetch" href="/assets/js/54.3d18840d.js"><link rel="prefetch" href="/assets/js/55.a9b10220.js"><link rel="prefetch" href="/assets/js/56.04543984.js"><link rel="prefetch" href="/assets/js/57.5b77e968.js"><link rel="prefetch" href="/assets/js/58.46cc77d7.js"><link rel="prefetch" href="/assets/js/59.e4ef251b.js"><link rel="prefetch" href="/assets/js/6.ddad5d93.js"><link rel="prefetch" href="/assets/js/60.eceb78dd.js"><link rel="prefetch" href="/assets/js/61.00db87e2.js"><link rel="prefetch" href="/assets/js/62.769c86ef.js"><link rel="prefetch" href="/assets/js/63.97694c9c.js"><link rel="prefetch" href="/assets/js/64.f2a7cefb.js"><link rel="prefetch" href="/assets/js/65.01a28796.js"><link rel="prefetch" href="/assets/js/66.76680dce.js"><link rel="prefetch" href="/assets/js/67.a135aa39.js"><link rel="prefetch" href="/assets/js/68.d3355a59.js"><link rel="prefetch" href="/assets/js/69.343fbe8f.js"><link rel="prefetch" href="/assets/js/7.5a5eca1f.js"><link rel="prefetch" href="/assets/js/70.18a45976.js"><link rel="prefetch" href="/assets/js/71.ece29134.js"><link rel="prefetch" href="/assets/js/8.ecbe09f8.js"><link rel="prefetch" href="/assets/js/9.0ecfebed.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.3e1d0bd1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">技术博客文章总结123</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端三剑客</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/html/" class="nav-link">HTML</a></li><li class="dropdown-item"><!----> <a href="/CSS/" class="nav-link">CSS</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/" class="nav-link">JavaScript</a></li></ul></div></div><div class="nav-item"><a href="/vue/" class="nav-link">Vue.js</a></div> <a href="https://github.com/tangmengcheng/technology.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端三剑客</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/html/" class="nav-link">HTML</a></li><li class="dropdown-item"><!----> <a href="/CSS/" class="nav-link">CSS</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/" class="nav-link">JavaScript</a></li></ul></div></div><div class="nav-item"><a href="/vue/" class="nav-link">Vue.js</a></div> <a href="https://github.com/tangmengcheng/technology.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading"><span>Vue 全家桶</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>React 全家桶</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>JS</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>ES6+</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>H5</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>CSS3</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>jQuery</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>HTTP</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Node</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Java</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>小程序</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>面试总结</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>高级进阶</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>项目</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>源码手写</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>高级面试题汇总</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/chapter16/" class="sidebar-link">Introduction</a></li><li><a href="/chapter16/html.html" class="sidebar-link">/chapter16/html.html</a></li><li><a href="/chapter16/css.html" class="sidebar-link">CSS部分</a></li><li><a href="/chapter16/js.html" class="active sidebar-link">JS 部分</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/chapter16/js.html#js-部分" class="sidebar-link">JS 部分</a></li></ul></li><li><a href="/chapter16/vue.html" class="sidebar-link">/chapter16/vue.html</a></li><li><a href="/chapter16/react.html" class="sidebar-link">/chapter16/react.html</a></li><li><a href="/chapter16/algorithm.html" class="sidebar-link">/chapter16/algorithm.html</a></li><li><a href="/chapter16/optimize.html" class="sidebar-link">/chapter16/optimize.html</a></li><li><a href="/chapter16/performance.html" class="sidebar-link">/chapter16/performance.html</a></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h2 id="js-部分"><a href="#js-部分" aria-hidden="true" class="header-anchor">#</a> JS 部分</h2> <h3 id="统计网页中出现的标签"><a href="#统计网页中出现的标签" aria-hidden="true" class="header-anchor">#</a> 统计网页中出现的标签</h3> <p><strong>实现步骤</strong>：</p> <ol><li>获取所有的DOM节点</li> <li>NodeList集合转化为数组</li> <li>获取数组每个元素的标签名</li> <li>去重</li></ol> <div class="language- extra-class"><pre class="language-text"><code>new Set([...document.querySelectorAll('*')].map(ele=&gt;ele.tagName)).size
+</code></pre></div><p><img src="https://user-gold-cdn.xitu.io/2020/3/30/17129ddd20fc1ae1?w=440&h=440&f=jpeg&s=30661" alt></p> <h3 id="js深浅拷贝"><a href="#js深浅拷贝" aria-hidden="true" class="header-anchor">#</a> JS深浅拷贝</h3> <p>对象深浅拷贝，是面试常见的面试题之一。</p> <p>原对象：</p> <div class="language- extra-class"><pre class="language-text"><code>let obj = {
+   a: 100,
+   b: [100, 200, 300],
+   c: {
+      x: 10
+   },
+   d: /^\d+$/
+}
+</code></pre></div><blockquote><p>浅克隆</p></blockquote> <p>浅克隆 只克隆第一层</p> <p>方法一：</p> <div class="language- extra-class"><pre class="language-text"><code>let obj2 = {...obj};
+</code></pre></div><p>方法二：</p> <div class="language- extra-class"><pre class="language-text"><code>let obj2 = {};
+for(let key in obj) {
+   if(!obj.hasOwnProperty(key)) break;
+   obj2[key] = obj[key];
+}
+</code></pre></div><blockquote><p>深克隆</p></blockquote> <p><strong>注意</strong>：在函数、日期、正则表达式时，JSON.stringify时，都会被转换成对象{}</p> <p>方法一：</p> <div class="language- extra-class"><pre class="language-text"><code>let obj3 = JSON.parse(JSON.stringify(obj));
+</code></pre></div><p>方法二：</p> <div class="language- extra-class"><pre class="language-text"><code>function deepClone(obj) {
+    // 过滤一些特殊情况
+    if(obj === null) return null;
+    if(typeof obj !== &quot;object&quot;) return obj;
+    if (typeof window !== 'undefined' &amp;&amp; window.JSON) { // 浏览器环境下 并支持window.JSON 则使用 JSON
+        return JSON.parse(JSON.stringify(obj));
+    }
+    if(obj instanceof RegExp) { // 正则
+         return new RegExp(obj);
+    }
+    if(obj instanceof Date) { // 日期
+         return new Date(obj);
+    }
+    // let newObj = {}
+    // let newObj = new Object()
+    let newObj = new obj.constructor; // 不直接创建空对象的目的：克隆的结果和之前保持所属类  =》 即能克隆普通对象，又能克隆某个实例对象
+    for(let key in obj) {
+        if(obj.hasOwnProperty(key)) {
+             newObj[key] = deepClone(obj[key]);
+        }
+    }
+    // let newObj = obj.constructor === Array ? [] : {};
+    //for(let key in obj) {
+    //    newObj[key] = typeof obj[key] === 'object' ? deepCopy(obj[key]) : //obj[key];
+    //}
+    return newObj;
+}
+</code></pre></div><h3 id="原生ajax"><a href="#原生ajax" aria-hidden="true" class="header-anchor">#</a> 原生Ajax</h3> <blockquote><p>一个完整的 ajax 请求一般包括以下步骤：</p></blockquote> <ul><li>实例化 XMLHttpRequest 对象</li> <li>连接服务器</li> <li>发送请求</li> <li>介绍</li></ul> <div class="language- extra-class"><pre class="language-text"><code>function ajax(options) {
+  let method = options.method || 'GET', // 不传则默认为GET请求
+      params = options.params, // GET请求携带的参数
+      data   = options.data, // POST请求传递的参数
+      url    = options.url + (params ? '?' + Object.keys(params).map(key =&gt; key + '=' + params[key]).join('&amp;') : ''),
+      async  = options.async === false ? false : true,
+      success = options.success,
+      headers = options.headers;
+
+  let xhr;
+  // 创建xhr对象
+  if(window.XMLHttpRequest) {
+    xhr = new XMLHttpRequest();
+  } else {
+    xhr = new ActiveXObject('Microsoft.XMLHTTP');
+  }
+
+  xhr.onreadystatechange = function() {
+    if(xhr.readyState === 4 &amp;&amp; xhr.status === 200) {
+      success &amp;&amp; success(xhr.responseText);
+    }
+  }
+
+  xhr.open(method, url, async);
+  
+  if(headers) {
+    Object.keys(Headers).forEach(key =&gt; xhr.setRequestHeader(key, headers[key]))
+  }
+
+  method === 'GET' ? xhr.send() : xhr.send(data)
+}
+</code></pre></div><p><strong>注意</strong>：IE5、6不兼容XMLHttpRequest，所以要使用ActiveXObject()对象，并传入 'Microsoft.XMLHTTP'，达到兼容目的。</p> <ul><li><p>readyState的五种状态详解：</p> <p>0 － （未初始化）还没有调用send()方法</p> <p>1 － （载入）已调用send()方法，正在发送请求</p> <p>2 － （载入完成）send()方法执行完成，已经接收到全部响应内容</p> <p>3 － （交互）正在解析响应内容</p> <p>4 － （完成）响应内容解析完成，可以在客户端调用了</p></li></ul> <h3 id="防抖和节流"><a href="#防抖和节流" aria-hidden="true" class="header-anchor">#</a> 防抖和节流</h3> <p>如今前端界面效果越来越复杂，有一些频繁操作会导致页面性能和用户体验度低。像：输入框搜索会频繁调端口接口、放大缩小窗口等。</p> <blockquote><p>防抖 - debounce 当持续触发事件时，一定时间段内没有再触发事件，事件处理函数才会执行一次，如果设定的时间到来之前，又一次触发了事件，就重新开始延时。</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>const debounce = (fn, delay) =&gt; {
+  let timer = null;
+  return (...args) =&gt; {
+    clearTimeout(timer);
+    timer = setTimeout(() =&gt; {
+      fn.apply(this, args);
+    }, delay);
+  };
+};
+</code></pre></div><blockquote><p>节流 - throttle 当持续触发事件时，保证一定时间段内只调用一次事件处理函数。</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>const throttle = (fn, delay = 500) =&gt; {
+  let flag = true;
+  return (...args) =&gt; {
+    if (!flag) return;
+    flag = false;
+    setTimeout(() =&gt; {
+      fn.apply(this, args);
+      flag = true;
+    }, delay);
+  };
+};
+</code></pre></div><h3 id="解析-url-参数"><a href="#解析-url-参数" aria-hidden="true" class="header-anchor">#</a> 解析 URL 参数</h3> <div class="language- extra-class"><pre class="language-text"><code>function parseParam(url) {
+    // 将浏览器地址中 ‘?’ 后面的字符串取出来
+    const paramsStr = /.+\?(.+)$/.exec(url)[1];
+    // 将截取的字符串以 ‘&amp;’ 分割后存到数组中
+    const paramsArr = paramsStr.split('&amp;');
+    // 定义存放解析后的对象
+    let paramsObj = {};
+    // 遍历
+    paramsArr.forEach(param =&gt; {
+      // 判断是否含有key和value
+      if (/=/.test(param)) {
+        // 结构获取对象的key和value
+        let [key, val] = param.split('=');
+        // 解码
+        val = decodeURIComponent(val);
+        // 判断是否转为数字
+        val = /^\d+$/.test(val) ? parseFloat(val) : val;
+        // 判断存放对象中是否存在key属性
+        if (paramsObj.hasOwnProperty(key)) {
+          // 存在的话就存放一个数组
+          paramsObj[key] = [].concat(paramsObj[key], val);
+        } else {
+          // 不存在就存放一个对象
+          paramsObj[key] = val;
+        }
+      } else {
+        // 没有value的情况
+        paramsObj[param] = true;
+      }
+    })
+    return paramsObj;
+}
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>let url = 'https://www.baidu.com?username=%22tmc%22&amp;password=%22123456%22&amp;dutiy=%E5%89%8D%E7%AB%AF%E6%94%BB%E5%9F%8E%E7%8B%AE&amp;flag';
+console.log(parseParam(url))
+
+{ username: '&quot;tmc&quot;',
+  password: '&quot;123456&quot;',
+  dutiy: '前端攻城狮',
+  flag: true 
+}
+</code></pre></div><h3 id="jsonp的原理"><a href="#jsonp的原理" aria-hidden="true" class="header-anchor">#</a> Jsonp的原理</h3> <div class="language- extra-class"><pre class="language-text"><code>function jsonp({url, params, cb}) { 
+   return new Promise((resolve, reject) =&gt; {
+     window[cb] = function (data) {  // 声明全局变量
+        resolve(data)
+        document.body.removeChild(script)
+      }
+      params = {...params, cb}
+      let arrs = []
+      for(let key in params) {
+         arrs.push(`${key}=${params[key]}`)
+      }
+      let script = document.createElement('script')
+      script.src = `${url}?${arrs.join('&amp;')}`
+      document.body.appendChild(script)
+   })
+}
+</code></pre></div><p><strong>jsonp的缺点</strong>：</p> <ol><li>只能发送Get请求  不支持post put delete</li> <li>不安全 xss攻击</li></ol> <h3 id="apply的原理"><a href="#apply的原理" aria-hidden="true" class="header-anchor">#</a> apply的原理</h3> <p><strong>apply</strong> 的实现原理和 <strong>call</strong> 的实现原理差不多，只是参数形式不一样。--- 数组</p> <div class="language- extra-class"><pre class="language-text"><code>Function.prototype.apply = function(content = window) {
+    content.fn = this;
+    let result;
+    // 判断是否有第二个参数
+    if(arguments[1]) {
+        result = content.fn(...arguments[1]);
+    } else {
+        result = content.fn();
+    }
+    delete content.fn;
+    return result;
+}
+</code></pre></div><p><strong>注意</strong>：当apply传入的第一个参数为null时，函数体内的this会指向window。</p> <h3 id="bind的原理"><a href="#bind的原理" aria-hidden="true" class="header-anchor">#</a> bind的原理</h3> <blockquote><p>bind 方法会创建一个新函数。当这个新函数被调用时，bind() 的第一个参数将作为它运行时的 this，之后的一序列参数将会在传递的实参前传入作为它的参数。</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>Function.prototype.bind = function(content) {
+   if(typeof this != 'function') {
+      throw Error('not a function');
+   }
+   let _this = this;
+   let args = [...arguments].slice(1);
+   return function F() {
+      // 判断是否被当做构造函数使用
+      if(this instanceof F) {
+         return _this.apply(this, args.concat([...arguments]))
+      }
+      return _this.apply(content, args.concat([...arguments]))
+   }
+}
+</code></pre></div><h3 id="call的原理"><a href="#call的原理" aria-hidden="true" class="header-anchor">#</a> call的原理</h3> <blockquote><p>call语法：fun.call(thisArg, arg1, arg2, arg3, .....)</p></blockquote> <p><strong>call</strong> 的核心原理：</p> <ul><li>将函数设为对象的属性</li> <li>执行和删除这个函数</li> <li>指定this到函数并传入给定参数执行函数</li> <li>如果不传参数，默认指向window</li></ul> <div class="language- extra-class"><pre class="language-text"><code>Function.prototype.call2 = function(content = window) {
+    // 判断是否是underfine和null
+    // if(typeof content === 'undefined' || typeof content === null){
+    //     content = window
+    // }
+    content.fn = this;
+    let args = [...arguments].slice(1);
+    let result = content.fn(...args);
+    delete content.fn;
+    return result;
+}
+</code></pre></div><p><strong>注意</strong>：当call传入的第一个参数为null时，函数体内的this会指向window。</p> <h3 id="new的原理"><a href="#new的原理" aria-hidden="true" class="header-anchor">#</a> new的原理</h3> <blockquote><p>实现一个new操作符的具体实现步骤：</p></blockquote> <ul><li>首先函数接受不定量的参数，第一个参数为构造函数，接下来的参数被构造函数使用</li> <li>然后内部创建一个空对象 obj</li> <li>因为 obj 对象需要访问到构造函数原型链上的属性，所以我们通过 setPrototypeOf 将两者联系起来。这段代码等同于 obj.<strong>proto</strong> = Con.prototype</li> <li>将 obj 绑定到构造函数上，并且传入剩余的参数</li> <li>判断构造函数返回值是否为对象，如果为对象就使用构造函数返回的值，否则使用 obj，这样就实现了忽略构造函数返回的原始值</li></ul> <div class="language- extra-class"><pre class="language-text"><code>/**
+ * 创建一个new操作符
+ * @param {*} Con 构造函数
+ * @param  {...any} args 忘构造函数中传的参数
+ */
+  function createNew(Con, ...args) {
+    let obj = {} // 创建一个对象，因为new操作符会返回一个对象
+    Object.setPrototypeOf(obj, Con.prototype) // 将对象与构造函数原型链接起来
+    // obj.__proto__ = Con.prototype // 等价于上面的写法
+    let result = Con.apply(obj, args) // 将构造函数中的this指向这个对象，并传递参数
+    return result instanceof Object ? result : obj
+}
+</code></pre></div><p><strong>注意</strong>：</p> <p>一、new操作符的几个作用：</p> <ol><li>new操作符返回一个对象，所以我们需要在内部创建一个对象</li> <li>这个对象，也就是构造函数中的this，可以访问到挂载在this上的任意属性</li> <li>这个对象可以访问到构造函数原型链上的属性，所以需要将对象与构造函数链接起来</li> <li>返回原始值需要忽略，返回对象需要正常处理</li></ol> <p>二、new操作符的特点：</p> <ol><li>new通过构造函数Test创建处理的实例可以访问构造函数中的属性也可以访问构造函数原型链上的属性，所以：通过new操作符，实例与构造函数通过原型链连接了起来</li> <li>构造函数如果返回原始值，那么这个返回值毫无意义</li> <li>构造函数如果返回对象，那么这个返回值会被正常的使用，导致new操作符没有作用</li></ol> <h3 id="instanceof的原理"><a href="#instanceof的原理" aria-hidden="true" class="header-anchor">#</a> instanceof的原理</h3> <blockquote><p>instanceof 用来检测一个对象在其原型链中是否存在一个构造函数的 prototype 属性</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>function instanceOf(left,right) {
+    let proto = left.__proto__;
+    let prototype = right.prototype
+    while(true) {
+        if(proto === null) return false
+        if(proto === prototype) return true
+        proto = proto.__proto__;
+    }
+}
+</code></pre></div><h3 id="promise-a-规范原理"><a href="#promise-a-规范原理" aria-hidden="true" class="header-anchor">#</a> Promise A+规范原理</h3> <p>在面试中高级前端时。要求被手写Promise A+规范源码是必考题了。如果想详细了解，请参考 <a href="https://juejin.im/post/5e2168626fb9a0300d619c9e" target="_blank" rel="noopener noreferrer">一步步教你实现Promise/A+ 规范 完整版<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <div class="language- extra-class"><pre class="language-text"><code>class Promise {
+    constructor(executor) {
+        this.status = 'pending' // 初始化状态
+        this.value = undefined // 初始化成功返回的值
+        this.reason = undefined // 初始化失败返回的原因
+
+        // 解决处理异步的resolve
+        this.onResolvedCallbacks = [] // 存放所有成功的resolve
+        this.onRejectedCallbacks = [] // 存放所有失败的reject
+
+        /**
+         * @param {*} value 成功返回值
+         * 定义resolve方法
+         * 注意：状态只能从pending-&gt;fulfilled和pending-&gt;rejected两个
+         */
+        const resolve = (value) =&gt; { 
+            if(this.status === 'pending') {
+                this.status = 'fulfilled' // 成功时将状态转换为成功态fulfilled
+                this.value = value // 将成功返回的值赋值给promise
+                // 为了解决异步resolve以及返回多层promise
+                this.onResolvedCallbacks.forEach(fn =&gt; {
+                    fn() // 当状态变为成功态依次执行所有的resolve函数
+                })
+            }
+        }
+        const reject = (reason) =&gt; {
+            if(this.status === 'pending') {
+                this.status = 'rejected' // 失败时将状态转换为成功态失败态rejected
+                this.reason = reason // 将失败返回的原因赋值给promise
+                this.onRejectedCallbacks.forEach(fn =&gt; {
+                    fn() // 当状态变为失败态依次执行所有的reject函数
+                })
+            }
+        }
+        executor(resolve, reject) // 执行promise传的回调函数
+    }
+    /**
+     * 定义promise的then方法 
+     * @param {*} onFulfilled 成功的回调
+     * @param {*} onRejected 失败的回调
+     */
+    then(onFulfilled, onRejected) {
+        // 为了解决then方法返回Promise的情况
+        const promise2 = new Promise((resolve, reject) =&gt; {
+            if(this.status === 'fulfilled') { // 如果状态为fulfilled时则将值传给这个成功的回调
+                setTimeout(() =&gt; {
+                    const x = onFulfilled(this.value) // x的值有可能为 promise || 123 || '123'...
+                    // 注意：此时调用promise2时还没有返回值，要用setTimeout模拟进入第二次事件循环；先有鸡先有蛋
+                    resolvePromise(promise2, x, resolve, reject) 
+                }, 0)
+            }
+            if(this.status === 'rejected') {
+                setTimeout(() =&gt; {
+                    const x = onRejected(this.reason) // 如果状态为rejected时则将视频的原因传给失败的回调
+                    resolvePromise(promise2, x, resolve, reject) 
+                }, 0)
+            }
+            if(this.status === 'pending') { // 记录-》解决异步
+                this.onResolvedCallbacks.push(() =&gt; {
+                    setTimeout(() =&gt; {
+                        const x = onFulfilled(this.value)
+                        resolvePromise(promise2, x, resolve, reject) 
+                    }, 0)
+                })
+                this.onRejectedCallbacks.push(() =&gt; {
+                    setTimeout(() =&gt; {
+                        const x = onRejected(this.reason)
+                        resolvePromise(promise2, x, resolve, reject) 
+                    }, 0)
+                })
+            }
+        })
+        return promise2; // 解决多次链式调用的问题
+    }
+}
+
+const resolvePromise = (promise2, x, resolve, reject) =&gt; {
+    // console.log(promise2, x, resolve, reject)
+    if(promise2 === x) { // 如果返回的值与then方法返回的值相同时
+        throw TypeError('循环引用')
+    }
+    // 判断x是不是promise;注意：null的typeof也是object要排除
+    if(typeof x === 'function' || (typeof x === 'object' &amp;&amp; x !== null)) {
+        try {
+            const then = x.then // 获取返回值x上的then方法；注意方法会报错要捕获异常；原因111
+            if(typeof then === 'function') { // 就认为是promise
+                then.call(x, y =&gt; {
+                    // resolve(y)
+                    // 递归解析 ; 有可能返回多个嵌套的promise
+                    resolvePromise(promise2, y, resolve, reject)
+                }, r =&gt; {
+                    reject(r)
+                })
+            }
+        } catch(e) {
+            reject(e)
+        }
+    } else {
+        resolve(x);
+    }
+}
+module.exports = Promise;
+</code></pre></div><h3 id="js数组"><a href="#js数组" aria-hidden="true" class="header-anchor">#</a> JS数组</h3> <h4 id="去重"><a href="#去重" aria-hidden="true" class="header-anchor">#</a> 去重</h4> <blockquote><p>普通项</p></blockquote> <p>let arr2 = [1, 2, 3, 2, 33, 55, 66, 3, 55];</p> <p>第一种：</p> <div class="language- extra-class"><pre class="language-text"><code>let newArr = [];
+   arr2.forEach(item =&gt; {
+       if(newArr.indexOf(item) == '-1') {
+           newArr.push(item);
+       }
+   })
+console.log(newArr);
+
+// (6) [1, 2, 3, 33, 55, 66]
+</code></pre></div><p>第二种：</p> <div class="language- extra-class"><pre class="language-text"><code>let newArr = [...new Set(arr2)];
+console.log(newArr);
+
+// (6) [1, 2, 3, 33, 55, 66]
+</code></pre></div><p><strong>注意</strong>：Array.from()、filter()、for()等方法都可以完成上面数组去重。</p> <blockquote><p>对象项</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>let arr1 = [
+    {id: 1, name: '汤小梦'},
+    {id: 2, name: '石小明'},
+    {id: 3, name: '前端开发'},
+    {id: 1, name: 'web前端'}
+];
+</code></pre></div><p>实现方法：</p> <div class="language- extra-class"><pre class="language-text"><code>const unique = (arr, key) =&gt; {
+    return [...new Map(arr.map(item =&gt; [item[key], item])).values()]
+}
+console.log(unique(arr1, 'id'));
+
+// [
+	{id: 1, name: &quot;web前端&quot;},
+	{id: 2, name: &quot;石小明&quot;},
+	{id: 3, name: &quot;前端开发&quot;}
+]
+</code></pre></div><h4 id="合并"><a href="#合并" aria-hidden="true" class="header-anchor">#</a> 合并</h4> <div class="language- extra-class"><pre class="language-text"><code>let arr3 = ['a', 'b']
+let arr4 = ['c', 'd']
+</code></pre></div><p>方法一：<strong>ES5</strong></p> <div class="language- extra-class"><pre class="language-text"><code>let arr5 = arr3.concat(arr4);
+console.log(arr5);
+
+// ['a', 'b', 'c', 'd']
+</code></pre></div><p>方法一：<strong>ES6</strong></p> <div class="language- extra-class"><pre class="language-text"><code>let arr6 = [...arr3, ...arr4];
+console.log(arr6);
+
+// ['a', 'b', 'c', 'd']
+</code></pre></div><h4 id="展平"><a href="#展平" aria-hidden="true" class="header-anchor">#</a> 展平</h4> <div class="language- extra-class"><pre class="language-text"><code>let arr7 = [1, 2, [3, 4], [5, 6, [7, 8, 9]]];
+</code></pre></div><p>第一种：</p> <div class="language- extra-class"><pre class="language-text"><code>let arrNew = arr7.flat(Infinity);
+console.log(arrNew);
+
+// (9) [1, 2, 3, 4, 5, 6, 7, 8, 9]
+</code></pre></div><p>第二种：</p> <div class="language- extra-class"><pre class="language-text"><code>let arrNew = arr7.join().split(',').map(Number);
+console.log(arrNew);
+
+// (9) [1, 2, 3, 4, 5, 6, 7, 8, 9]
+</code></pre></div><p>第三种：</p> <div class="language- extra-class"><pre class="language-text"><code>let arrNew = arr7.toString().split(',').map(Number);
+console.log(arrNew);
+
+// (9) [1, 2, 3, 4, 5, 6, 7, 8, 9]
+</code></pre></div><p>第四种：</p> <div class="language- extra-class"><pre class="language-text"><code>const flattern = (arr) =&gt; {
+     const result = []
+     arr.forEach((item) =&gt; {
+         if (Array.isArray(item)) {
+              result.push(...flattern(item))
+         } else {
+              result.push(item)
+         }
+    })
+    return result
+}
+flattern(arr7);
+
+// (9) [1, 2, 3, 4, 5, 6, 7, 8, 9]
+</code></pre></div><p>第五种：</p> <div class="language- extra-class"><pre class="language-text"><code>function flatten(arr) {
+    return [].concat(
+        ...arr.map(x =&gt; Array.isArray(x) ? flatten(x) : x)
+    )
+}
+flattern(arr7);
+
+// (9) [1, 2, 3, 4, 5, 6, 7, 8, 9]
+</code></pre></div><h4 id="是否为数组"><a href="#是否为数组" aria-hidden="true" class="header-anchor">#</a> 是否为数组</h4> <div class="language- extra-class"><pre class="language-text"><code>let arr = []
+</code></pre></div><p>第一种：<code>instanceof</code></p> <div class="language- extra-class"><pre class="language-text"><code>console.log(arr instanceof Array)
+</code></pre></div><p>第二种：<code>constructor</code></p> <div class="language- extra-class"><pre class="language-text"><code>console.log(arr.constructor === Array)
+</code></pre></div><p>第三种：<code>判断对象是否有 push 等数组的一些方法</code></p> <div class="language- extra-class"><pre class="language-text"><code>console.log(!!arr.push &amp;&amp; !!arr.concat)
+</code></pre></div><p>第四种：<code>toString</code></p> <div class="language- extra-class"><pre class="language-text"><code>console.log(Object.prototype.toString.call(arr) === '[object Array]')
+</code></pre></div><p>第五种：<code>Array.isArray</code></p> <div class="language- extra-class"><pre class="language-text"><code>console.log(Array.isArray(arr))
+</code></pre></div><p><strong>注意</strong>：第五种方式最优~</p> <h4 id="冒泡排序"><a href="#冒泡排序" aria-hidden="true" class="header-anchor">#</a> 冒泡排序</h4> <div class="language- extra-class"><pre class="language-text"><code>let arr = [1, 44, 6, 77, 3, 7, 99, 12];
+</code></pre></div><ul><li>冒泡排序算法的原理如下：</li></ul> <ol><li>比较两个相邻的元素，若前一个比后一个大，则交换位置</li> <li>第一轮的时候最后一个元素应该是最大的一个</li> <li>对所有的元素重复以上的步骤，除了最后一个</li></ol> <div class="language- extra-class"><pre class="language-text"><code>function bubbleSort(arr) {
+    for(let i=0; i&lt;arr.length; i++) {
+        for(let j=0; j&lt;arr.length - i - 1; j++) {
+            if(arr[j+1] &lt; arr[j]) {
+                let temp = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = temp;
+            }
+        }
+    }
+    return arr;
+}
+console.log(bubbleSort(arr));
+
+// [ 1, 3, 6, 7, 12, 44, 77, 99 ]
+</code></pre></div><p><strong>注意</strong>：最后一个元素不用比较。</p> <h4 id="快速排序"><a href="#快速排序" aria-hidden="true" class="header-anchor">#</a> 快速排序</h4> <div class="language- extra-class"><pre class="language-text"><code>let arr = [1, 44, 6, 77, 3, 7, 99, 12];
+</code></pre></div><ul><li>快速排序算法的原理如下：</li></ul> <ol><li>找基准（一般是以中间项为基准）</li> <li>遍历数组，小于基准的放在left，大于基准的放在right</li> <li>递归</li></ol> <div class="language- extra-class"><pre class="language-text"><code>function quickSort(arr) {
+    if(arr.length &lt;= 1) return arr;
+    let mid = Math.floor(arr.length / 2);
+    let midItem = arr.splice(mid, 1)[0];
+    let leftArr = [];
+    let rightArr = [];
+    for(let i=0; i&lt;arr.length; i++) {
+        let current = arr[i];
+        if(current &gt;= midItem) {
+            rightArr.push(current);
+        } else {
+            leftArr.push(current);
+        }
+    }
+    return quickSort(leftArr).concat([midItem], quickSort(rightArr));
+}
+
+console.log(quickSort(arr));
+
+// [ 1, 3, 6, 7, 12, 44, 77, 99 ]
+</code></pre></div></div> <div class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新时间: </span> <span class="time">3/30/2020, 11:50:25 PM</span></div></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/chapter16/css.html" class="prev">
+          CSS部分
+        </a></span> <span class="next"><a href="/chapter16/vue.html">
+          /chapter16/vue.html
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/assets/js/app.587ba592.js" defer></script><script src="/assets/js/51.6920fd1f.js" defer></script>
+  </body>
+</html>
