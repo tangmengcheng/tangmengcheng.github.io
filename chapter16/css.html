@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>经典 Flex 布局 | 技术博客文章总结</title>
+    <meta name="description" content="Welcome to come to my blog">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.3e1d0bd1.css" as="style"><link rel="preload" href="/assets/js/app.7b03aa32.js" as="script"><link rel="preload" href="/assets/js/59.d62e1412.js" as="script"><link rel="prefetch" href="/assets/js/10.12b53a80.js"><link rel="prefetch" href="/assets/js/100.38aa9dc6.js"><link rel="prefetch" href="/assets/js/101.ec5c8ae3.js"><link rel="prefetch" href="/assets/js/102.dd330742.js"><link rel="prefetch" href="/assets/js/103.0e0ff62a.js"><link rel="prefetch" href="/assets/js/104.ebb50051.js"><link rel="prefetch" href="/assets/js/105.a8a6d179.js"><link rel="prefetch" href="/assets/js/106.acff0d71.js"><link rel="prefetch" href="/assets/js/107.9830050d.js"><link rel="prefetch" href="/assets/js/108.54ce1238.js"><link rel="prefetch" href="/assets/js/109.c1fa140b.js"><link rel="prefetch" href="/assets/js/11.96d83f25.js"><link rel="prefetch" href="/assets/js/110.ad5cfac0.js"><link rel="prefetch" href="/assets/js/111.290a256a.js"><link rel="prefetch" href="/assets/js/12.e1e13740.js"><link rel="prefetch" href="/assets/js/13.54b8193f.js"><link rel="prefetch" href="/assets/js/14.d38c872c.js"><link rel="prefetch" href="/assets/js/15.18cd0e92.js"><link rel="prefetch" href="/assets/js/16.3849c8df.js"><link rel="prefetch" href="/assets/js/17.40439939.js"><link rel="prefetch" href="/assets/js/18.4509d613.js"><link rel="prefetch" href="/assets/js/19.b7a99b71.js"><link rel="prefetch" href="/assets/js/2.1cb688f5.js"><link rel="prefetch" href="/assets/js/20.86ea3f23.js"><link rel="prefetch" href="/assets/js/21.fed61503.js"><link rel="prefetch" href="/assets/js/22.5cef517a.js"><link rel="prefetch" href="/assets/js/23.57aac34a.js"><link rel="prefetch" href="/assets/js/24.c1acdc8c.js"><link rel="prefetch" href="/assets/js/25.dc2084b2.js"><link rel="prefetch" href="/assets/js/26.2fbe6371.js"><link rel="prefetch" href="/assets/js/27.00b9f765.js"><link rel="prefetch" href="/assets/js/28.2dbe742b.js"><link rel="prefetch" href="/assets/js/29.06c8a997.js"><link rel="prefetch" href="/assets/js/3.410565ef.js"><link rel="prefetch" href="/assets/js/30.a956387e.js"><link rel="prefetch" href="/assets/js/31.e80ace47.js"><link rel="prefetch" href="/assets/js/32.0701b532.js"><link rel="prefetch" href="/assets/js/33.3e3dc4fa.js"><link rel="prefetch" href="/assets/js/34.e2e6fa93.js"><link rel="prefetch" href="/assets/js/35.6e4187f3.js"><link rel="prefetch" href="/assets/js/36.af4141e5.js"><link rel="prefetch" href="/assets/js/37.c8e5eea0.js"><link rel="prefetch" href="/assets/js/38.a48f75c0.js"><link rel="prefetch" href="/assets/js/39.7fb2296e.js"><link rel="prefetch" href="/assets/js/4.b56b0d47.js"><link rel="prefetch" href="/assets/js/40.1774cb01.js"><link rel="prefetch" href="/assets/js/41.f5688cbb.js"><link rel="prefetch" href="/assets/js/42.aa5e5651.js"><link rel="prefetch" href="/assets/js/43.a005dae0.js"><link rel="prefetch" href="/assets/js/44.8f9a242c.js"><link rel="prefetch" href="/assets/js/45.18488b44.js"><link rel="prefetch" href="/assets/js/46.0440b29e.js"><link rel="prefetch" href="/assets/js/47.c63f7f30.js"><link rel="prefetch" href="/assets/js/48.7559cdf4.js"><link rel="prefetch" href="/assets/js/49.124f1185.js"><link rel="prefetch" href="/assets/js/5.c930aab6.js"><link rel="prefetch" href="/assets/js/50.0cb9667f.js"><link rel="prefetch" href="/assets/js/51.3b52b647.js"><link rel="prefetch" href="/assets/js/52.adc80ad3.js"><link rel="prefetch" href="/assets/js/53.b037ae99.js"><link rel="prefetch" href="/assets/js/54.3c64c64f.js"><link rel="prefetch" href="/assets/js/55.2b28de6f.js"><link rel="prefetch" href="/assets/js/56.b710bc14.js"><link rel="prefetch" href="/assets/js/57.9d399acb.js"><link rel="prefetch" href="/assets/js/58.3c6a0e3f.js"><link rel="prefetch" href="/assets/js/6.f05c8d37.js"><link rel="prefetch" href="/assets/js/60.eed2951f.js"><link rel="prefetch" href="/assets/js/61.75e06b0c.js"><link rel="prefetch" href="/assets/js/62.d4db0de4.js"><link rel="prefetch" href="/assets/js/63.7dd1df0d.js"><link rel="prefetch" href="/assets/js/64.2b9174b3.js"><link rel="prefetch" href="/assets/js/65.e957d152.js"><link rel="prefetch" href="/assets/js/66.c033b4ce.js"><link rel="prefetch" href="/assets/js/67.a71ecdc6.js"><link rel="prefetch" href="/assets/js/68.eeb7234b.js"><link rel="prefetch" href="/assets/js/69.21cfe949.js"><link rel="prefetch" href="/assets/js/7.cb7cd671.js"><link rel="prefetch" href="/assets/js/70.367d591f.js"><link rel="prefetch" href="/assets/js/71.4ff7e250.js"><link rel="prefetch" href="/assets/js/72.b0a7e202.js"><link rel="prefetch" href="/assets/js/73.0392a3ac.js"><link rel="prefetch" href="/assets/js/74.e0813fb3.js"><link rel="prefetch" href="/assets/js/75.e6d4fda7.js"><link rel="prefetch" href="/assets/js/76.5a4d6aa0.js"><link rel="prefetch" href="/assets/js/77.5d31235c.js"><link rel="prefetch" href="/assets/js/78.c6634d37.js"><link rel="prefetch" href="/assets/js/79.ae3c8544.js"><link rel="prefetch" href="/assets/js/8.33ffc2f6.js"><link rel="prefetch" href="/assets/js/80.5fe21230.js"><link rel="prefetch" href="/assets/js/81.96c6e60a.js"><link rel="prefetch" href="/assets/js/82.d08f73d6.js"><link rel="prefetch" href="/assets/js/83.21f5182c.js"><link rel="prefetch" href="/assets/js/84.949ae416.js"><link rel="prefetch" href="/assets/js/85.a5b4bd3b.js"><link rel="prefetch" href="/assets/js/86.da1cad16.js"><link rel="prefetch" href="/assets/js/87.3662a0ff.js"><link rel="prefetch" href="/assets/js/88.75825f4c.js"><link rel="prefetch" href="/assets/js/89.d0cff70f.js"><link rel="prefetch" href="/assets/js/9.6e5f00e1.js"><link rel="prefetch" href="/assets/js/90.9cc833f6.js"><link rel="prefetch" href="/assets/js/91.65f3f54c.js"><link rel="prefetch" href="/assets/js/92.e82cd5a2.js"><link rel="prefetch" href="/assets/js/93.6ab1a4e2.js"><link rel="prefetch" href="/assets/js/94.7e6ffa53.js"><link rel="prefetch" href="/assets/js/95.5d4d890d.js"><link rel="prefetch" href="/assets/js/96.e02a6966.js"><link rel="prefetch" href="/assets/js/97.1327bd51.js"><link rel="prefetch" href="/assets/js/98.f62a103b.js"><link rel="prefetch" href="/assets/js/99.2ded39f0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.3e1d0bd1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">技术博客文章总结</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端三剑客</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/html/" class="nav-link">HTML</a></li><li class="dropdown-item"><!----> <a href="/CSS/" class="nav-link">CSS</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/" class="nav-link">JavaScript</a></li></ul></div></div><div class="nav-item"><a href="/vue/" class="nav-link">Vue.js</a></div> <a href="https://github.com/tangmengcheng/technology.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端三剑客</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/html/" class="nav-link">HTML</a></li><li class="dropdown-item"><!----> <a href="/CSS/" class="nav-link">CSS</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/" class="nav-link">JavaScript</a></li></ul></div></div><div class="nav-item"><a href="/vue/" class="nav-link">Vue.js</a></div> <a href="https://github.com/tangmengcheng/technology.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading"><span>Vue 全家桶</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>React 全家桶</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Webpack4.x</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>JS</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>TS</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>ES6+</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>H5</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>CSS3</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>jQuery</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>HTTP</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Node</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Java</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>小程序</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>数据结构与算法</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>前端设计模式</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>面试总结</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>高级进阶</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>项目</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>源码手写</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>高级面试题汇总</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/chapter16/" class="sidebar-link">前端面试大纲</a></li><li><a href="/chapter16/html.html" class="sidebar-link">HTML 部分</a></li><li><a href="/chapter16/css.html" class="active sidebar-link">CSS 部分</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/chapter16/css.html#经典-flex-布局" class="sidebar-link">经典 Flex 布局</a></li><li class="sidebar-sub-header"><a href="/chapter16/css.html#两栏布局" class="sidebar-link">两栏布局</a></li><li class="sidebar-sub-header"><a href="/chapter16/css.html#三栏布局" class="sidebar-link">三栏布局</a></li><li class="sidebar-sub-header"><a href="/chapter16/css.html#圣杯布局" class="sidebar-link">圣杯布局</a></li><li class="sidebar-sub-header"><a href="/chapter16/css.html#双飞翼布局" class="sidebar-link">双飞翼布局</a></li><li class="sidebar-sub-header"><a href="/chapter16/css.html#水平垂直居中" class="sidebar-link">水平垂直居中</a></li></ul></li><li><a href="/chapter16/js.html" class="sidebar-link">JS 部分</a></li><li><a href="/chapter16/vue.html" class="sidebar-link">Vue 部分</a></li><li><a href="/chapter16/react.html" class="sidebar-link">React 部分</a></li><li><a href="/chapter16/algorithm.html" class="sidebar-link">算法部分</a></li><li><a href="/chapter16/optimize.html" class="sidebar-link">优化部分</a></li><li><a href="/chapter16/performance.html" class="sidebar-link">性能部分</a></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h2 id="经典-flex-布局"><a href="#经典-flex-布局" aria-hidden="true" class="header-anchor">#</a> 经典 Flex 布局</h2> <p>如今<code>Flex</code>布局不管是移动端还是 PC 端的应用已经非常广泛了，下面我列举几个平时项目中非常常见的几个需求。以下例子我们都以 Vue 项目为例~</p> <blockquote><p>flex 布局均匀分布后换行问题</p></blockquote> <p>需求一：<code>ul</code>下有多个<code>li</code>，每三个<code>li</code>排一列，多余的换行显示。</p> <p>很显然，绝大部分的小伙伴都会使用<code>Flex布局</code>，很显然会出现一个问题就是如果 li 是 3 的倍数的话就能正常显示，若不是的话，布局就不是产品经理满意的结果。</p> <div class="language- extra-class"><pre class="language-text"><code>display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+</code></pre></div><p><img src="https://user-gold-cdn.xitu.io/2020/3/30/17129d241aa41ddd?w=1088&h=922&f=jpeg&s=45051" alt></p> <p><strong>解决方案</strong>：</p> <p>我们在<code>ul</code>的底部新增<code>li</code>，个数为数组<strong>总长度%3</strong>的余数即可。</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;li class=&quot;item&quot; style=&quot;border: none;&quot; v-for=&quot;(ite, idx) in list.length%3&quot; :key=&quot;idx&quot;&gt;&lt;/li&gt;
+</code></pre></div><p><img src="https://user-gold-cdn.xitu.io/2020/3/30/17129d241d97854d?w=1080&h=896&f=jpeg&s=43302" alt></p> <h2 id="两栏布局"><a href="#两栏布局" aria-hidden="true" class="header-anchor">#</a> 两栏布局</h2> <blockquote><p>两栏布局：<code>左右两栏，左边固定，右边自适应</code></p></blockquote> <p>效果图</p> <p><img src="https://user-gold-cdn.xitu.io/2020/3/22/171016bfb87c3f2b?w=2814&h=852&f=png&s=94737" alt></p> <ol><li><p>第一种方式 --- <code>浮动</code></p> <p>HTML 部分：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;div class=&quot;outer outer1&quot;&gt;
+    &lt;div class=&quot;left&quot;&gt;1-left&lt;/div&gt;
+    &lt;div class=&quot;right&quot;&gt;1-right&lt;/div&gt;
+&lt;/div&gt;
+</code></pre></div><p>CSS 部分：</p> <div class="language- extra-class"><pre class="language-text"><code>.outer1 .left {
+    width: 200px;
+    float: left;
+}
+.outer1 .right {
+    width: auto;
+    margin-left: 200px;
+}
+</code></pre></div></li> <li><p>第二种方式 --- <code>flex</code></p> <p>HTML 部分：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;div class=&quot;outer outer2&quot;&gt;
+    &lt;div class=&quot;left&quot;&gt;2-left&lt;/div&gt;
+    &lt;div class=&quot;right&quot;&gt;2-right&lt;/div&gt;
+&lt;/div&gt;
+</code></pre></div><p>CSS 部分：</p> <div class="language- extra-class"><pre class="language-text"><code>.outer2 {
+   display: flex;
+}
+.outer2 .left {
+   flex: 0 0 200px;
+   /* flex-grow: 0;
+   flex-shrink:0;
+   flex-basis:200px; */
+}
+.outer2 .right {
+   flex: auto;
+}
+
+注意：flex: 0 0 200px是flex: flex-grow flex-shrink flex-basis的简写
+</code></pre></div></li> <li><p>第三种方式 --- <code>position</code></p> <p>HTML 部分：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;div class=&quot;outer outer3&quot;&gt;
+   &lt;div class=&quot;left&quot;&gt;3-left&lt;/div&gt;
+   &lt;div class=&quot;right&quot;&gt;3-right&lt;/div&gt;
+&lt;/div&gt;
+</code></pre></div><p>CSS 部分：</p> <div class="language- extra-class"><pre class="language-text"><code>.outer3 {
+   position: relative;
+}
+.outer3 .left {
+   position: absolute;
+   width: 200px;
+}
+.outer3 .right {
+   margin-left: 200px;
+}
+</code></pre></div></li> <li><p>第四种方式 --- <code>position again</code></p> <p>HTML 部分：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;div class=&quot;outer outer4&quot;&gt;
+    &lt;div class=&quot;left&quot;&gt;4-left&lt;/div&gt;
+    &lt;div class=&quot;right&quot;&gt;4-right&lt;/div&gt;
+&lt;/div&gt;
+</code></pre></div><p>CSS 部分：</p> <div class="language- extra-class"><pre class="language-text"><code>.outer4 {
+    position: relative;
+}
+.outer4 .left {
+    width: 200px;
+}
+.outer4 .right {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    right: 0;
+}
+</code></pre></div></li></ol> <h2 id="三栏布局"><a href="#三栏布局" aria-hidden="true" class="header-anchor">#</a> 三栏布局</h2> <blockquote><p>三栏布局： <code>中间列自适应宽度，旁边两侧固定宽度</code></p></blockquote> <p>效果图</p> <p><img src="https://user-gold-cdn.xitu.io/2020/3/22/171016bfbd8ec528?w=2816&h=622&f=png&s=114551" alt></p> <ol><li><p>第一种方式 --- <code>定位</code></p> <p>HTML 部分：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;div class=&quot;outer outer1&quot;&gt;
+   &lt;div class=&quot;left&quot;&gt;1-left&lt;/div&gt;
+   &lt;div class=&quot;middle&quot;&gt;1-middle&lt;/div&gt;
+   &lt;div class=&quot;right&quot;&gt;1-right&lt;/div&gt;
+&lt;/div&gt;
+</code></pre></div><p>CSS 部分：</p> <div class="language- extra-class"><pre class="language-text"><code>.outer1 {
+   position: relative;
+}
+.outer1 .left {
+   position: absolute;
+   width: 100px;
+}
+.outer1 .middle {
+   margin: 0 200px 0 100px;
+}
+.outer1 .right {
+   position: absolute;
+   width: 200px;
+   top: 0;
+   right: 0;
+}
+注意：左右分别使用绝对定位，中间设置外边距
+</code></pre></div></li> <li><p>第二种方式 --- <code>flex布局</code></p> <p>HTML 部分：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;div class=&quot;outer outer2&quot;&gt;
+   &lt;div class=&quot;left&quot;&gt;2-left&lt;/div&gt;
+   &lt;div class=&quot;middle&quot;&gt;2-middle&lt;/div&gt;
+   &lt;div class=&quot;right&quot;&gt;2-right&lt;/div&gt;
+&lt;/div&gt;
+</code></pre></div><p>CSS 部分：</p> <div class="language- extra-class"><pre class="language-text"><code>.outer2 {
+   display: flex;
+}
+.outer2 .left {
+   flex: 0 0 100px;
+}
+.outer2 .middle {
+   flex: auto;
+}
+.outer2 .right {
+   flex: 0 0 200px;
+}
+</code></pre></div></li> <li><p>第三种方式 --- <code>浮动原理</code></p> <p>HTML 部分：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;div class=&quot;outer outer3&quot;&gt;
+   &lt;div class=&quot;left&quot;&gt;3-left&lt;/div&gt;
+   &lt;div class=&quot;right&quot;&gt;3-right&lt;/div&gt;
+   &lt;div class=&quot;middle&quot;&gt;3-middle&lt;/div&gt;
+&lt;/div&gt;
+</code></pre></div><p>CSS 部分：</p> <div class="language- extra-class"><pre class="language-text"><code>.outer3 .left{
+   float: left;
+   width: 100px;
+}
+.outer3 .right {
+   float: right;
+   width: 200px;
+}
+.outer3 .middle {
+   margin: 0 200px 0 100px;
+}
+</code></pre></div></li></ol> <h2 id="圣杯布局"><a href="#圣杯布局" aria-hidden="true" class="header-anchor">#</a> 圣杯布局</h2> <blockquote><p>圣杯布局: <code>中间的优先渲染，独立的左中右结构</code></p></blockquote> <p>具体实现圣杯布局的步骤：</p> <ol><li>让左右浮动在一行显示，相对定位</li> <li>让中间模块的 middle 宽度为 100%</li> <li>让左边的色块移动到 middle 前面，margin-left:-100%</li> <li>让右边的色块移动到 middle 的后面，margin-left:-宽度</li> <li>给三个小块的父元素加一个内填充的属性 padding,为的是填充挤到中间</li> <li>给左边的块移动到左边 left:-200px, 给右边的块移动到右边 right:-200px</li></ol> <p>效果图</p> <p><img src="https://user-gold-cdn.xitu.io/2020/3/22/171016bfea7d0bbe?w=2816&h=798&f=png&s=55592" alt></p> <p>HTML 部分：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;header&gt;header&lt;/header&gt;
+   &lt;div class=&quot;container&quot;&gt;
+      &lt;div class=&quot;middle&quot;&gt;midlle&lt;/div&gt;
+      &lt;div class=&quot;left&quot;&gt;left&lt;/div&gt;
+      &lt;div class=&quot;right&quot;&gt;right&lt;/div&gt;
+   &lt;/div&gt;
+&lt;footer&gt;footer&lt;/footer&gt;
+</code></pre></div><p>CSS 部分：</p> <div class="language- extra-class"><pre class="language-text"><code>header, footer {
+   height: 100px;
+   width: 100%;
+   background-color: antiquewhite;
+}
+.container {
+   height: 200px;
+   padding-left: 200px;
+   padding-right: 300px;
+}
+.container &gt; div {
+   float: left;
+   position: relative;
+   height: 100%;
+}
+.left {
+   width: 200px;
+   height: 200px;
+   background-color: burlywood;
+   margin-left: -100%;
+   left: -200px;
+}
+.right {
+   width: 300px;
+   height: 200px;
+   background-color: burlywood;
+   margin-left: -300px;
+   right: -300px;
+}
+.middle {
+   width: 100%;
+   height: 200px;
+   background-color: #b0f9c2;
+}
+</code></pre></div><h2 id="双飞翼布局"><a href="#双飞翼布局" aria-hidden="true" class="header-anchor">#</a> 双飞翼布局</h2> <blockquote><p>双飞翼布局</p></blockquote> <p>具体实现双飞翼布局的步骤：</p> <ol><li>给左，中，右 加浮动，在一行显示</li> <li>给 middle 宽度为 100%</li> <li>让左边的模块移动 middle 的左边 margin-left:-100%</li> <li>让右边的模块移动 middle 的右边 margin-left:-自己宽度</li> <li>给 middle 里面的容器添加外间距 margin: 左右</li></ol> <p>效果：</p> <p><img src="https://user-gold-cdn.xitu.io/2020/3/22/171016bfeaa7fbb3?w=2830&h=466&f=jpeg&s=13556" alt></p> <p>html 部分</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;div class=&quot;main&quot;&gt;
+    &lt;div class=&quot;middle&quot;&gt;
+			&lt;div class=&quot;middle-inner&quot;&gt;中间&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;left&quot;&gt;左边&lt;/div&gt;
+    &lt;div class=&quot;right&quot;&gt;右边&lt;/div&gt;
+&lt;/div&gt;
+</code></pre></div><p>css 部分</p> <div class="language- extra-class"><pre class="language-text"><code>.main&gt;div {
+    float:left;
+    position: relative;
+    height: 300px;
+}
+.middle {
+    width: 100%;
+    background-color: lightgreen
+}
+.left {
+   width:200px;
+   margin-left:-100%;
+   background-color:#b0f9c2
+}
+.right {
+   width: 200px;
+   margin-left:-200px;
+   background-color:pink
+}
+.middle-inner{
+   margin:0 200px;
+   background-color: burlywood;
+   height:300px;
+}
+</code></pre></div><h2 id="水平垂直居中"><a href="#水平垂直居中" aria-hidden="true" class="header-anchor">#</a> 水平垂直居中</h2> <p>html 部分</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;div class=&quot;box&quot; id=&quot;box&quot;&gt;
+   石小明
+&lt;/div&gt;
+</code></pre></div><p>css 部分</p> <p>公共部分</p> <div class="language- extra-class"><pre class="language-text"><code>body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.box {
+    box-sizing: border-box;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid lightblue;
+    background: lightcyan;
+}
+</code></pre></div><p>第一种：<code>定位</code></p> <div class="language- extra-class"><pre class="language-text"><code>.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -25px;
+}
+</code></pre></div><p><strong>注意</strong>：上面的方式是一定要知道具体的宽高。但下面的方式是知道宽高，但是没有用到宽高。</p> <p>第二种：<code>flex</code></p> <div class="language- extra-class"><pre class="language-text"><code>body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+</code></pre></div><p><strong>注意</strong>：这种方式也是兼容性不是很好</p> <p>第三种：<code>JavaScript</code></p> <div class="language- extra-class"><pre class="language-text"><code>let html = document.documentElement,
+            winW = html.clientWidth,
+            winH = html.clientHeight,
+            boxW = box.offsetWidth, // offsetWidth带边框
+            boxH = box.offsetHeight;
+
+            box.style.position = 'absolute';
+            box.style.left = (winW - boxW) / 2 + 'px';
+            box.style.top = (winH - boxH) / 2 + 'px';
+</code></pre></div><p>第四种：<code>table-cell</code></p> <div class="language- extra-class"><pre class="language-text"><code>body {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+</code></pre></div></div> <div class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新时间: </span> <span class="time">8/14/2020, 5:57:04 PM</span></div></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/chapter16/html.html" class="prev">
+          HTML 部分
+        </a></span> <span class="next"><a href="/chapter16/js.html">
+          JS 部分
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/assets/js/app.7b03aa32.js" defer></script><script src="/assets/js/59.d62e1412.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>掌握Vuex全面实例教程以及工作原理实现 | 技术博客文章总结</title>
+    <meta name="description" content="Welcome to come to my blog">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.3e1d0bd1.css" as="style"><link rel="preload" href="/assets/js/app.7b03aa32.js" as="script"><link rel="preload" href="/assets/js/56.b710bc14.js" as="script"><link rel="prefetch" href="/assets/js/10.12b53a80.js"><link rel="prefetch" href="/assets/js/100.38aa9dc6.js"><link rel="prefetch" href="/assets/js/101.ec5c8ae3.js"><link rel="prefetch" href="/assets/js/102.dd330742.js"><link rel="prefetch" href="/assets/js/103.0e0ff62a.js"><link rel="prefetch" href="/assets/js/104.ebb50051.js"><link rel="prefetch" href="/assets/js/105.a8a6d179.js"><link rel="prefetch" href="/assets/js/106.acff0d71.js"><link rel="prefetch" href="/assets/js/107.9830050d.js"><link rel="prefetch" href="/assets/js/108.54ce1238.js"><link rel="prefetch" href="/assets/js/109.c1fa140b.js"><link rel="prefetch" href="/assets/js/11.96d83f25.js"><link rel="prefetch" href="/assets/js/110.ad5cfac0.js"><link rel="prefetch" href="/assets/js/111.290a256a.js"><link rel="prefetch" href="/assets/js/12.e1e13740.js"><link rel="prefetch" href="/assets/js/13.54b8193f.js"><link rel="prefetch" href="/assets/js/14.d38c872c.js"><link rel="prefetch" href="/assets/js/15.18cd0e92.js"><link rel="prefetch" href="/assets/js/16.3849c8df.js"><link rel="prefetch" href="/assets/js/17.40439939.js"><link rel="prefetch" href="/assets/js/18.4509d613.js"><link rel="prefetch" href="/assets/js/19.b7a99b71.js"><link rel="prefetch" href="/assets/js/2.1cb688f5.js"><link rel="prefetch" href="/assets/js/20.86ea3f23.js"><link rel="prefetch" href="/assets/js/21.fed61503.js"><link rel="prefetch" href="/assets/js/22.5cef517a.js"><link rel="prefetch" href="/assets/js/23.57aac34a.js"><link rel="prefetch" href="/assets/js/24.c1acdc8c.js"><link rel="prefetch" href="/assets/js/25.dc2084b2.js"><link rel="prefetch" href="/assets/js/26.2fbe6371.js"><link rel="prefetch" href="/assets/js/27.00b9f765.js"><link rel="prefetch" href="/assets/js/28.2dbe742b.js"><link rel="prefetch" href="/assets/js/29.06c8a997.js"><link rel="prefetch" href="/assets/js/3.410565ef.js"><link rel="prefetch" href="/assets/js/30.a956387e.js"><link rel="prefetch" href="/assets/js/31.e80ace47.js"><link rel="prefetch" href="/assets/js/32.0701b532.js"><link rel="prefetch" href="/assets/js/33.3e3dc4fa.js"><link rel="prefetch" href="/assets/js/34.e2e6fa93.js"><link rel="prefetch" href="/assets/js/35.6e4187f3.js"><link rel="prefetch" href="/assets/js/36.af4141e5.js"><link rel="prefetch" href="/assets/js/37.c8e5eea0.js"><link rel="prefetch" href="/assets/js/38.a48f75c0.js"><link rel="prefetch" href="/assets/js/39.7fb2296e.js"><link rel="prefetch" href="/assets/js/4.b56b0d47.js"><link rel="prefetch" href="/assets/js/40.1774cb01.js"><link rel="prefetch" href="/assets/js/41.f5688cbb.js"><link rel="prefetch" href="/assets/js/42.aa5e5651.js"><link rel="prefetch" href="/assets/js/43.a005dae0.js"><link rel="prefetch" href="/assets/js/44.8f9a242c.js"><link rel="prefetch" href="/assets/js/45.18488b44.js"><link rel="prefetch" href="/assets/js/46.0440b29e.js"><link rel="prefetch" href="/assets/js/47.c63f7f30.js"><link rel="prefetch" href="/assets/js/48.7559cdf4.js"><link rel="prefetch" href="/assets/js/49.124f1185.js"><link rel="prefetch" href="/assets/js/5.c930aab6.js"><link rel="prefetch" href="/assets/js/50.0cb9667f.js"><link rel="prefetch" href="/assets/js/51.3b52b647.js"><link rel="prefetch" href="/assets/js/52.adc80ad3.js"><link rel="prefetch" href="/assets/js/53.b037ae99.js"><link rel="prefetch" href="/assets/js/54.3c64c64f.js"><link rel="prefetch" href="/assets/js/55.2b28de6f.js"><link rel="prefetch" href="/assets/js/57.9d399acb.js"><link rel="prefetch" href="/assets/js/58.3c6a0e3f.js"><link rel="prefetch" href="/assets/js/59.d62e1412.js"><link rel="prefetch" href="/assets/js/6.f05c8d37.js"><link rel="prefetch" href="/assets/js/60.eed2951f.js"><link rel="prefetch" href="/assets/js/61.75e06b0c.js"><link rel="prefetch" href="/assets/js/62.d4db0de4.js"><link rel="prefetch" href="/assets/js/63.7dd1df0d.js"><link rel="prefetch" href="/assets/js/64.2b9174b3.js"><link rel="prefetch" href="/assets/js/65.e957d152.js"><link rel="prefetch" href="/assets/js/66.c033b4ce.js"><link rel="prefetch" href="/assets/js/67.a71ecdc6.js"><link rel="prefetch" href="/assets/js/68.eeb7234b.js"><link rel="prefetch" href="/assets/js/69.21cfe949.js"><link rel="prefetch" href="/assets/js/7.cb7cd671.js"><link rel="prefetch" href="/assets/js/70.367d591f.js"><link rel="prefetch" href="/assets/js/71.4ff7e250.js"><link rel="prefetch" href="/assets/js/72.b0a7e202.js"><link rel="prefetch" href="/assets/js/73.0392a3ac.js"><link rel="prefetch" href="/assets/js/74.e0813fb3.js"><link rel="prefetch" href="/assets/js/75.e6d4fda7.js"><link rel="prefetch" href="/assets/js/76.5a4d6aa0.js"><link rel="prefetch" href="/assets/js/77.5d31235c.js"><link rel="prefetch" href="/assets/js/78.c6634d37.js"><link rel="prefetch" href="/assets/js/79.ae3c8544.js"><link rel="prefetch" href="/assets/js/8.33ffc2f6.js"><link rel="prefetch" href="/assets/js/80.5fe21230.js"><link rel="prefetch" href="/assets/js/81.96c6e60a.js"><link rel="prefetch" href="/assets/js/82.d08f73d6.js"><link rel="prefetch" href="/assets/js/83.21f5182c.js"><link rel="prefetch" href="/assets/js/84.949ae416.js"><link rel="prefetch" href="/assets/js/85.a5b4bd3b.js"><link rel="prefetch" href="/assets/js/86.da1cad16.js"><link rel="prefetch" href="/assets/js/87.3662a0ff.js"><link rel="prefetch" href="/assets/js/88.75825f4c.js"><link rel="prefetch" href="/assets/js/89.d0cff70f.js"><link rel="prefetch" href="/assets/js/9.6e5f00e1.js"><link rel="prefetch" href="/assets/js/90.9cc833f6.js"><link rel="prefetch" href="/assets/js/91.65f3f54c.js"><link rel="prefetch" href="/assets/js/92.e82cd5a2.js"><link rel="prefetch" href="/assets/js/93.6ab1a4e2.js"><link rel="prefetch" href="/assets/js/94.7e6ffa53.js"><link rel="prefetch" href="/assets/js/95.5d4d890d.js"><link rel="prefetch" href="/assets/js/96.e02a6966.js"><link rel="prefetch" href="/assets/js/97.1327bd51.js"><link rel="prefetch" href="/assets/js/98.f62a103b.js"><link rel="prefetch" href="/assets/js/99.2ded39f0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.3e1d0bd1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">技术博客文章总结</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端三剑客</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/html/" class="nav-link">HTML</a></li><li class="dropdown-item"><!----> <a href="/CSS/" class="nav-link">CSS</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/" class="nav-link">JavaScript</a></li></ul></div></div><div class="nav-item"><a href="/vue/" class="nav-link">Vue.js</a></div> <a href="https://github.com/tangmengcheng/technology.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端三剑客</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/html/" class="nav-link">HTML</a></li><li class="dropdown-item"><!----> <a href="/CSS/" class="nav-link">CSS</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/" class="nav-link">JavaScript</a></li></ul></div></div><div class="nav-item"><a href="/vue/" class="nav-link">Vue.js</a></div> <a href="https://github.com/tangmengcheng/technology.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading"><span>Vue 全家桶</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>React 全家桶</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Webpack4.x</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>JS</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>TS</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>ES6+</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>H5</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>CSS3</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>jQuery</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>HTTP</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Node</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Java</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>小程序</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>数据结构与算法</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>前端设计模式</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>面试总结</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>高级进阶</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>项目</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>源码手写</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/chapter15/" class="sidebar-link">前端高级-源码篇</a></li><li><a href="/chapter15/mvvm.html" class="sidebar-link">MVVM 是什么</a></li><li><a href="/chapter15/vue.html" class="sidebar-link">vue</a></li><li><a href="/chapter15/react.html" class="sidebar-link">react</a></li><li><a href="/chapter15/redux.html" class="sidebar-link">redux</a></li><li><a href="/chapter15/promise.html" class="sidebar-link">promise</a></li><li><a href="/chapter15/vuex.html" class="active sidebar-link">掌握Vuex全面实例教程以及工作原理实现</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/chapter15/vuex.html#vuex是什么" class="sidebar-link">Vuex是什么</a></li><li class="sidebar-sub-header"><a href="/chapter15/vuex.html#vuex核心功能点" class="sidebar-link">Vuex核心功能点</a></li><li class="sidebar-sub-header"><a href="/chapter15/vuex.html#辅助函数的使用" class="sidebar-link">辅助函数的使用</a></li><li class="sidebar-sub-header"><a href="/chapter15/vuex.html#实现简易的vuex" class="sidebar-link">实现简易的Vuex</a></li><li class="sidebar-sub-header"><a href="/chapter15/vuex.html#总结" class="sidebar-link">总结</a></li></ul></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>高级面试题汇总</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="掌握vuex全面实例教程以及工作原理实现"><a href="#掌握vuex全面实例教程以及工作原理实现" aria-hidden="true" class="header-anchor">#</a> 掌握Vuex全面实例教程以及工作原理实现</h1> <h2 id="vuex是什么"><a href="#vuex是什么" aria-hidden="true" class="header-anchor">#</a> Vuex是什么</h2> <p><code>Vuex</code>是<code>Vue</code>的状态管理工具，为了更方便实现多个组件共享状态。</p> <p><img src="https://vuex.vuejs.org/vuex.png" alt></p> <p>Vuex的特点：</p> <ol><li>Vuex 的状态存储是响应式的。当 Vue 组件从 store 中读取状态的时候，若 store 中的状态发生变化，那么相应的组件也会相应地得到高效更新。</li> <li>你不能直接改变 store 中的状态。改变 store 中的状态的唯一途径就是显式地<strong>提交 (commit) mutation</strong>。这样使得我们可以方便地跟踪每一个状态的变化，从而让我们能够实现一些工具帮助我们更好地了解我们的应用。</li></ol> <h2 id="vuex核心功能点"><a href="#vuex核心功能点" aria-hidden="true" class="header-anchor">#</a> Vuex核心功能点</h2> <p>我们使用Vue脚手架创建一个项目作为本次演练的开发环境。</p> <div class="language- extra-class"><pre class="language-text"><code>vue create vuex-demo
+</code></pre></div><p><strong>注意</strong>：生成项目的时候，记得选中vuex，避免后面手动安装vuex并导入到<code>main.js</code>中。</p> <h3 id="state"><a href="#state" aria-hidden="true" class="header-anchor">#</a> State</h3> <p>第一步：在仓库store中定义需要全局共享的state变量</p> <div class="language- extra-class"><pre class="language-text"><code>state: {
+   age: 25
+}
+</code></pre></div><p>第二步：在对应的组件中获取并显示在页面上</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;p&gt;{{$store.state.age}}&lt;/p&gt;
+</code></pre></div><h3 id="getters"><a href="#getters" aria-hidden="true" class="header-anchor">#</a> Getters</h3> <p><code>getters</code>相当于组件中的<code>computed</code>计算属性。当<code>state</code>中定义的数据发送变化后，<code>getters</code>中的数据会自动跟着变化。</p> <p>第一步：在仓库store中定义好getters</p> <div class="language- extra-class"><pre class="language-text"><code>getters: {
+   getAge(state) {
+      return state.age + 1;
+   }
+}
+</code></pre></div><p>第二步：在对应的组件中获取并显示在页面上</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;p&gt;{{$store.getters.getAge}}&lt;/p&gt;
+</code></pre></div><h3 id="mutations"><a href="#mutations" aria-hidden="true" class="header-anchor">#</a> Mutations</h3> <p>第一步：在仓库store中定义需求调用的mutation方法</p> <div class="language- extra-class"><pre class="language-text"><code>mutations: {
+   incre(state, payload) {
+      state.age += payload.age;
+   }
+}
+</code></pre></div><p><strong>注意</strong>：参数<code>payload</code>可以是对象。</p> <p>第二步：在对应组件中定义触发更改状态的模板和方法</p> <div class="language- extra-class"><pre class="language-text"><code>// template
+&lt;button @click=&quot;add&quot;&gt;增加&lt;/button&gt;
+
+// script
+methods: {
+   add() {
+      this.$store.commit('incre', {age: 1});
+   }
+}
+</code></pre></div><p><strong>注意</strong>：'incre'名称一定要和<code>mutations</code>中定义的名称一样。</p> <h3 id="actions"><a href="#actions" aria-hidden="true" class="header-anchor">#</a> Actions</h3> <p>第一步：在仓库store中定义需求调用的mutation方法</p> <div class="language- extra-class"><pre class="language-text"><code>actions: {
+   increAsyn({commit}, payload) {
+      commit('incre', payload);
+   }
+}
+</code></pre></div><p>第二步：在对应组件中定义触发更改状态的模板和方法</p> <div class="language- extra-class"><pre class="language-text"><code>// template
+&lt;button @click=&quot;addAsyn&quot;&gt;异步增加&lt;/button&gt;
+
+// script
+addAsyn() {
+   this.$store.dispatch('increAsyn', {age: 1});
+}
+</code></pre></div><p><strong>注意</strong>：<code>mutations</code> 必须是同步函数，<code>actions</code>可以为异步函数。</p> <h3 id="modules"><a href="#modules" aria-hidden="true" class="header-anchor">#</a> Modules</h3> <p>第一步：在仓库store中定义不同的模块以及modules方法</p> <div class="language- extra-class"><pre class="language-text"><code>const moduleA = {
+  state: {
+    name: 'txm',
+    age: 25
+  },
+  getters: {},
+  mutations: {},
+  actions: {}
+}
+
+const moduleB = {
+  state: {
+    name: 'sxm',
+    age: 22
+  },
+  getters: {},
+  mutations: {},
+  actions: {}
+}
+
+modules: {
+    a: moduleA,
+    b: moduleB
+}
+</code></pre></div><p>第二步：在对应的组件中获取并显示在页面上</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;p&gt;{{$store.state.a.age}}&lt;/p&gt;
+&lt;p&gt;{{$store.state.b.age}}&lt;/p&gt;
+</code></pre></div><h2 id="辅助函数的使用"><a href="#辅助函数的使用" aria-hidden="true" class="header-anchor">#</a> 辅助函数的使用</h2> <h3 id="mapstate"><a href="#mapstate" aria-hidden="true" class="header-anchor">#</a> mapState</h3> <p>第一步：在对应的组件中从<code>vuex</code>取出<code>mapState</code></p> <div class="language- extra-class"><pre class="language-text"><code>import {mapState} from 'vuex';
+</code></pre></div><p>若计算属性只为获取仓库store的状态，则可以使用以上方式：</p> <div class="language- extra-class"><pre class="language-text"><code>computed: mapState([
+    'age'
+])
+</code></pre></div><p>若即想获取仓库store里的状态又可以自定义组件的计算属性，则可以使用以上方式：</p> <div class="language- extra-class"><pre class="language-text"><code>computed: {
+   ...mapState([
+      'age'
+   ])
+}
+</code></pre></div><p>第二步：在对应的组件中获取并显示在页面上</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;p&gt;{{age}}&lt;/p&gt;
+</code></pre></div><h3 id="mapgetters"><a href="#mapgetters" aria-hidden="true" class="header-anchor">#</a> mapGetters</h3> <p>第一步：在对应的组件中从<code>vuex</code>取出<code>mapGetters</code></p> <div class="language- extra-class"><pre class="language-text"><code>import {mapGetters} from 'vuex';
+</code></pre></div><p>通过组件中的计算属性进行获取：</p> <div class="language- extra-class"><pre class="language-text"><code>computed: {
+   ...mapGetters([
+      'getAge'
+   ])
+}
+</code></pre></div><p>第二步：在对应的组件中获取并显示在页面上</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;p&gt;{{getAge}}&lt;/p&gt;
+</code></pre></div><h3 id="mapmutations"><a href="#mapmutations" aria-hidden="true" class="header-anchor">#</a> mapMutations</h3> <p>第一步：在对应的组件中从<code>vuex</code>取出<code>mapMutations</code></p> <div class="language- extra-class"><pre class="language-text"><code>import {mapMutations} from 'vuex';
+</code></pre></div><p>在组件的methods属性中获取仓库store中的mutations方法，然后在methods里对应的方法中执行也可以携带参数。</p> <div class="language- extra-class"><pre class="language-text"><code>methods: {
+    add() {
+      // this.$store.commit('incre', {age: 1});
+      this.incre({age: 1});
+    },
+    ...mapMutations([
+      'incre'
+    ])
+}
+</code></pre></div><p>第二步：在对应组件中点击页面按钮看见状态的变化。</p> <h3 id="mapactions"><a href="#mapactions" aria-hidden="true" class="header-anchor">#</a> mapActions</h3> <p>第一步：在对应的组件中从<code>vuex</code>取出<code>mapActions</code></p> <div class="language- extra-class"><pre class="language-text"><code>import {mapActions} from 'vuex';
+</code></pre></div><p>在组件的methods属性中获取仓库store中的actions方法，然后在methods里对应的方法中执行也可以携带参数。</p> <div class="language- extra-class"><pre class="language-text"><code>methods: {
+   addAsyn() {
+      // this.$store.dispatch('increAsyn', {age: 1});
+      this.increAsyn({age: 1});
+   },
+   ...mapActions([
+      'increAsyn'
+   ])
+}
+</code></pre></div><h2 id="实现简易的vuex"><a href="#实现简易的vuex" aria-hidden="true" class="header-anchor">#</a> 实现简易的Vuex</h2> <p>由于Vue插件的限制，插件必须提供一个<code>install</code>方法，所以需要暴露一个<code>install</code>方法出去。在该方法中使用<code>mixin</code>结合<code>beforeCreate</code>钩子函数让所有组件都拥有<code>$store</code>属性。</p> <div class="language- extra-class"><pre class="language-text"><code>let Vue;
+class Store {
+    constructor(options = {}) {
+        this.vm = new Vue({
+            data: {
+                state: options.state
+            }
+        })
+        let getters = options.getters;
+
+        this.getters = {}
+        Object.keys(getters).forEach(getterName =&gt; {
+            Object.defineProperty(this.getters, getterName, {
+                get: () =&gt; {
+                    return getters[getterName](this.state)
+                }
+            })
+        })
+        let mutations = options.mutations || {}
+        this.mutations = {}
+        Object.keys(mutations).forEach(mutaitonName =&gt; {
+            this.mutations[mutaitonName] = payload =&gt; {
+                mutations[mutaitonName](this.state, payload);
+            }
+        })
+        let actions = options.actions || {}
+        this.actions = {}
+        Object.keys(actions).forEach(actionName =&gt; {
+            this.actions[actionName] = payload =&gt; {
+                actions[actionName](this, payload);
+            }
+        })
+    }
+    commit = (method, payload) =&gt; {
+        this.mutations[method](payload);
+    }
+    dispatch(method, payload) {
+        this.actions[method](payload)
+    }
+    get state() {
+        return this.vm.state
+    }
+}
+
+const install = (_Vue) =&gt; {
+    Vue = _Vue;
+    Vue.mixin({
+        beforeCreate() {
+            if(this.$options &amp;&amp; this.$options.store) {
+                // 给根实例增加$store属性
+                this.$store = this.$options.store
+            } else {
+                // 有可能单独创建了一个实例没有父亲，那就无法获取到store属性
+                this.$store = this.$parent &amp;&amp; this.$parent.$store
+            }
+        }
+    })
+}
+export default {
+    install,
+    Store
+}
+</code></pre></div><p><strong>注意</strong>：在实现commit方法时，会存在this指向问题，我们采用箭头函数即可。</p> <h2 id="总结"><a href="#总结" aria-hidden="true" class="header-anchor">#</a> 总结</h2> <p>上面主要是本人复习简易整理的<code>Vuex</code>的核心用法，方便日后查看，简易有需要的小伙伴和把<code>实现简易的Vuex</code>这小节认值敲几遍。</p></div> <div class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新时间: </span> <span class="time">6/15/2020, 10:51:27 AM</span></div></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/chapter15/promise.html" class="prev">
+          promise
+        </a></span> <span class="next"><a href="/chapter16/">
+          前端面试大纲
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/assets/js/app.7b03aa32.js" defer></script><script src="/assets/js/56.b710bc14.js" defer></script>
+  </body>
+</html>
